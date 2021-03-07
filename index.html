@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"/> 
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <h1 style="color: #FFFFFF">Aaron Sickafuse</h1>
     </head>
 
     <style>
@@ -25,8 +26,8 @@
         .topRight {
             position: absolute;
             top: 8px;
-            right: 16px;
-            font-size: 20px;
+            right: 25px;
+            font-size: 40px;
         }
     </style>  
 
@@ -37,8 +38,7 @@
     </div>
 
     <body>
-        <h1 style="color: #FFFFFF">Aaron Sickafuse</h1>
-        <p style="color: #FFFFFF">This is a test website I am wanting to mess around with.</p>
+        <h1 style="color: #FFFFFF">This is a test website I am wanting to mess around with.</h1>
 
         <script>
             setInterval(showTime, 1000);
@@ -64,7 +64,7 @@
 
                 let ct = hour+":"+min+":"+sec+AmPm;
 
-                document.getElementsByName("clock").innerHTML = ct;
+                document.getElementsByClassName("clock").innerHTML = ct;
             }
 
             showTime();
