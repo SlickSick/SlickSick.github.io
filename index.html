@@ -37,10 +37,21 @@
 
     <body>
         <h2 style="color: #FFFFFF">
-            <div> have no idea what I am doing. :)</div>
+            <div>I have no idea what I am doing. :)</div>
         </h2>
+        <p id="clock"></p>
 
-        
+        <script>
+        function clock() {
+            var t = new Date();
+            var h = t.getHours;
+            var m = t.getMinutes;
+            var s = t.getSeconds;
+
+            var ct = h + ":" + m + ":" + s;
+            return ct;
+        }
+        document.getElementById("clock").innerHTML = ct;
 
         </script>
     </body>
