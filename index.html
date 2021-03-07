@@ -16,7 +16,7 @@
         #clock {
                 font-size: 175px;
                 width: 900px;
-                margin-top: right;
+                margin: right;
                 text-align: center;
             }
     </style>    
@@ -25,7 +25,7 @@
         <h1 style="color: #FFFFFF">Aaron Sickafuse</h1>
         <p style="color: #FFFFFF">This is a test website I am wanting to mess around with.</p>
 
-        <div id="clock">
+        <div name="clock">
             8:10:45
         </div>
 
@@ -53,7 +53,7 @@
 
                 let ct = hour+":"+min+":"+sec+AmPm;
 
-                document.getElementsById("clock").innerHTML = ct;
+                document.getElementsByName("clock").innerHTML = ct;
             }
 
             showTime();
