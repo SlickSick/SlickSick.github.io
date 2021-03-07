@@ -33,25 +33,24 @@
             background-size: cover;
             font-family: 'Roboto',serif;
         }
+
+        p {
+            font-family: 'Roboto',serif;
+            color: #FFFFFF;
+        }
     </style>  
 
     <body>
         <h2 style="color: #FFFFFF">
             <div>I have no idea what I am doing. :)</div>
         </h2>
-        <p id="clock"></p>
+        <p id="demo"></p>
 
         <script>
-        function clock() {
-            var t = new Date();
-            var h = t.getHours;
-            var m = t.getMinutes;
-            var s = t.getSeconds;
-
-            var ct = h + ":" + m + ":" + s;
-            return ct;
+        function d(f) {
+            return (5/9) * (f-32)
         }
-        document.getElementById("clock").innerHTML = clock;
+        document.getElementById("demo").innerHTML = d(77);
 
         </script>
     </body>
