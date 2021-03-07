@@ -11,13 +11,10 @@
 
     <style>
         h1 {
-            color: #FFFFFF;
+            color: #000000;
             background-color: #d3d3d38a;
             font-size: 80px;
-        }
-
-        .container {
-            position: relative;
+            margin: center;
         }
 
         body {
@@ -26,58 +23,12 @@
             background-attachment: fixed;
             background-size: cover;
         }
-
-        .clock {
-                margin-top: right;
-                text-align: center;
-            }
-
-        .topRight {
-            position: absolute;
-            top: 25px;
-            right: 10px;
-            font-size: 40px;
-            color: #FFFFFF;
-        }
     </style>  
 
     <body>
         <h2 style="color: #FFFFFF">I have no idea what I am doing. :)</h2>
 
-        <script>
-            setInterval(showTime, 1000);
-            function showTime() {
-                let time = new Date();
-                let hour = time.getHours();
-                let min = time.getMinutes();
-                let sec = time.getSeconds();
-                AmPm = "AM";
-
-                if(hour > 12) {
-                    hour -= 12;
-                    AmPm = "PM";
-                }
-                if(hour == 0) {
-                    hr = 12;
-                    AmPm = "AM";
-                }
-
-                hour = hour < 10 ? "0" + hour : hour;
-                min = min < 10 ? "0" + min : min;
-                sec = sec < 10 ? "0" + sec : sec;
-
-                ct = hour+":"+min+":"+sec+AmPm;
-
-                document.getElementsById("clock").innerHTML = ct;
-            }
-
-            <div class="container">
-                 <div class="topRight">
-                     <div id="clock">1:06:00AM</div>
-                </div>
-            </div>
-
-            showTime();
+        
 
         </script>
     </body>
