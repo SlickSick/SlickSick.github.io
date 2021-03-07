@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/> 
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <h1 style="color: #FFFFFF">Aaron Sickafuse</h1>
+        <title style="color: #FFFFFF">Aaron Sickafuse</title>
     </head>
 
     <style>
@@ -25,9 +25,10 @@
 
         .topRight {
             position: absolute;
-            top: 8px;
-            right: 25px;
+            top: 25px;
+            right: 10px;
             font-size: 40px;
+            color: #FFFFFF;
         }
     </style>  
 
@@ -64,7 +65,7 @@
 
                 let ct = hour+":"+min+":"+sec+AmPm;
 
-                document.getElementsByClassName("clock").innerHTML = ct;
+                document.getElementsById("clock").innerHTML = ct;
             }
 
             showTime();
