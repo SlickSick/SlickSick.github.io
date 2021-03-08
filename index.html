@@ -15,6 +15,8 @@
     </head>
 
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
         h1 {
             color: #000000;
             background-color: #d3d3d38a;
@@ -61,12 +63,13 @@
             var hour = date.getHours();
             var min = date.getMinutes();
             var sec = date.getSeconds();
-        }
-
-        function currentTime() {
             hour = updateTime(hour);
             min = updateTime(min);
             sec = updateTime(sec);
+            var t = setTimeout(function(){ currentTime()}, 1000);
+            var midday = "AM";
+            midday = (hour >= 12) ? "PM" : "AM";
+            hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour);
         }
 
         function updateTime(k) {
@@ -79,10 +82,6 @@
         }
 
         document.getElementById("clock").innerHTML = hour + " : " + min + " : " + sec;
-
-        function currentTime() {
-            var t = setTimeout(function(){ currentTime()}, 1000);
-        }
 
         currentTime();
 
