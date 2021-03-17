@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
 
-        //title in the header
         <title style="color: #FFFFFF">Work In Progress - SlickSick - Github Website</title>
         <h1>
             <center>
@@ -10,9 +9,10 @@
             </center>
         </h1>
 
+        <div id="clock"></div>
+
     </head>
 
-    //Styles for the page
     <style>
         /*imports*/
         @import url('https://fonts.googleapis.com/css?family=Orbitron');
@@ -58,15 +58,11 @@
     </style>  
 
     <body>
-        //body paragraph
+
         <h2 style="color: #FFFFFF">
-            <div>Work in Progress.  Currently focusing on school.</div>
-        </h2>//end body paragraph
+            <div>Work in Progress.</div>
+        </h2>
 
-        //setting the clock in a div
-        <div id="clock"></div>
-
-        /*This is the clock implementation*/
         <script>
         function currentTime() {
             var date = new Date();
@@ -93,7 +89,7 @@
         }//updateTime
 
         currentTime();
-        </script>//end clock
+        </script>
 
 
     </body>
