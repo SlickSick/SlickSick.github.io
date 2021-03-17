@@ -54,7 +54,7 @@
             position: absolute;
             margin: auto;
             top: 45px;
-            right: 100px;
+            right: 125px;
         }
 
     </style>  
@@ -70,14 +70,14 @@
             var date = new Date();
             var hour = date.getHours(); //get hours
             var min = date.getMinutes();    //get minutes
-            var sec = date.getSeconds();    //get seconds
+            //var sec = date.getSeconds();    //get seconds
             var midday = "AM";
             midday = (hour >= 12) ? "PM" : "AM";
             hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour);
             hour = updateTime(hour);
             min = updateTime(min);
-            sec = updateTime(sec);
-            document.getElementById("clock").innerHTML = hour + " : " + min + " : " + sec + " " +midday;
+            //sec = updateTime(sec);
+            document.getElementById("clock").innerHTML = hour + " : " + min + " " + midday;
             var t = setTimeout(function(){ currentTime()}, 1000);
         }//currentTime
 
